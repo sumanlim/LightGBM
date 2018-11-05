@@ -9,7 +9,7 @@ if [[ $OS_NAME == "macos" ]]; then
         fi
     else
         if [[ $TRAVIS == "true" ]]; then
-            sudo softwareupdate --ignore iTunesX "macOS High Sierra 10.13.6 Update- "
+            sudo softwareupdate --ignore iTunesX "macOS High Sierra 10.13.6 Update"
             sudo softwareupdate -ia  # fix "fatal error: _stdio.h: No such file or directory"
             rm '/usr/local/include/c++'
 #            brew cask uninstall oclint  #  reserve variant to deal with conflict link
